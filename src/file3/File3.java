@@ -25,13 +25,18 @@ public class File3 {
      */
     public static void main(String[] args) {
         File fichero1;
-        fichero1 = new File("c:\pruebas\dir1");        // existe
+        fichero1 = new File("c:\\pruebas\\dir1");        // existe
         File fichero2;
-        fichero2 = new File("c:\pruebas\dir2");        // no existe
+        fichero2 = new File("c:\\pruebas\\dir2");        // no existe
         File fichero3;
-        fichero3 = new File("c:\pruebas\hola.txt");        // existe
+        fichero3 = new File("c:\\pruebas\\hola.txt");        // existe
         File fichero4;
-        fichero1 = new File("c:\pruebas\dir1");        // existe
+        fichero4 = new File("c:\\pruebas\\dir1");        // existe
+        
+        System.out.println("el fichero1 "+ fichero1.exists());
+        System.out.println("el fichero2 "+ fichero2.exists());
+        System.out.println("el fichero3 "+ fichero3.exists());
+        System.out.println("el fichero4 "+ fichero4.exists());
         
         
     }
